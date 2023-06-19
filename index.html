@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+     <!--custom css-->
     <link rel="stylesheet" href="styles.css">
+
+    <!--custom javascript-->
     <script defer src="main.js"></script>
 </head>
 
@@ -36,14 +40,18 @@
 
     <!--header main-->
     <main>
+
+        <!--making a form-->
         <section class="search-form">
             <h2>Form Section</h2>
+
             <form action="GET" id="meal-form">
                 <label form="search-term">Search term</label>
                 <input type="text" name="search-term" id="search-term" 
                 placeholder="input search term" required>
 
                 <br />
+
                 <label form="category-filter">Category Filter</label>
                 <select name="category-filter" id="category-filter" required>
                     <option value="option 1">option 1</option>
@@ -56,6 +64,7 @@
                 <input type="submit" value="Search">
             </form>
         </section>
+        <!-- making a form end-->
 
         <section></section>
         <section id="section1">
