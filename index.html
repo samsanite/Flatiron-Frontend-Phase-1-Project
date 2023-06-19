@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phase 1 Project</title>
     <!--css reset: sindressorhus/modern-normalize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
+
 <body>
-   <!--header begin--> 
-   <header id="top">
-    <h1>Phase 1 Project</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#section1">Section 1</a>
-            </li>
-            <li>
-                <a href="#section2">Section 2</a>
-            </li>
-            <li>
-                <a href="#section3">Section 3</a>
-            </li>
-        </ul>
-    </nav>
-   </header>
-   <!--header end-->
+    <!--header begin-->
+    <header id="top">
+        <h1>Phase 1 Project</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#section1">Section 1</a>
+                </li>
+                <li>
+                    <a href="#section2">Section 2</a>
+                </li>
+                <li>
+                    <a href="#section3">Section 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--header end-->
 
-   <!--header main-->
-   <main>
-    <section id="section1">
-        <h1>Section 1</h1>
-        <img src="#" alt="image">
-        <p>
-            <!--image information-->
-        </p>
-    </section>
-    <section id="section2">
-        <h1>Section 2</h1>
-        <img src="#" alt="image">
-        <p>
-            <!--image information-->
-        </p>
-    </section>
-    <section id="section3">
-        <h1>Section 3</h1>
-        <img src="#" alt="image">
-        <p>
-            <!--image information-->
-        </p>
-    </section>
-   </main>
-   <!--main end-->
+    <!--header main-->
+    <main>
+        <section class="search-form">
+            <h2>Form Section</h2>
+            <form action="GET" id="meal-form">
+                <label form="search-term">Search term</label>
+                <input type="text" name="search-term" id="search-term" 
+                placeholder="input search term" required>
 
-   <!--footer begin-->
-   <footer>
-    <p>Copyright Your Name 2023</p>
-    <a href="#top">back to top</a>
-   </footer>
-   <!--footer end-->
+                <br />
+                <label form="category-filter">Category Filter</label>
+                <select name="category-filter" id="category-filter" required>
+                    <option value="option 1">option 1</option>
+                    <option value="option 2">opiton 2</option>
+                    <option value="option 3">option 3</option>
+                </select>
+
+                <br />
+
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+        <section></section>
+        <section id="section1">
+            <h1>Section 1</h1>
+            <img src="#" alt="image">
+            <p>
+                <!--image information-->
+            </p>
+        </section>
+        <section id="section2">
+            <h1>Section 2</h1>
+            <img src="#" alt="image">
+            <p>
+                <!--image information-->
+            </p>
+        </section>
+        <section id="section3">
+            <h1>Section 3</h1>
+            <img src="#" alt="image">
+            <p>
+                <!--image information-->
+            </p>
+        </section>
+    </main>
+    <!--main end-->
+
+    <!--footer begin-->
+    <footer>
+        <p>Copyright Your Name 2023</p>
+        <a href="#top">back to top</a>
+    </footer>
+    <!--footer end-->
 </body>
+
 </html>
