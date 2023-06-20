@@ -1,9 +1,25 @@
 console.log('connected')
 
-const handleFormInputFocus = () => {
-    console.log('focus occurred')
+const searchTermInput = documen.body.querySelector("#search-term");
+
+// fetching API data
+const getMealCateregories= async () => {  //async to avoid jumping og code
+    const mealCateogisApiURL = "GET https://www.mmobomb.com/api1/games?sort-by=alphabetical"
+    try {
+        const response = await fetch(mealCateogisApiURL)
+        const data = response.json()
+        const categories = data.categories
+        console.log('categories:', categories);
+    }catch (error) {
+        console.log(error)
+        alert('Something went wrong, try again later')
+    }
 }
 
-const searchTermInput = documen.body.querySelector("#search-term")
+const handleFormInputFocus = async () => {   //new fetch
+    console.log('focus occurred');
 
-document.addEventListener('focus', handleFormInputFocus)
+    await getMealCateregories();
+};
+
+searchTermInput.addEventListener('focus', handleFormInputFocus);
